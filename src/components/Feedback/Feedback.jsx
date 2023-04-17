@@ -34,7 +34,10 @@ class Feedback extends Component {
     return (
       <div>
         <Section title="Please leave feedback">
-          <FeedbackOptions onLeaveFeedback={this.handleClick} />
+          <FeedbackOptions
+            onLeaveFeedback={this.handleClick}
+            options={Object.keys(this.state)}
+          />
         </Section>
         <Section title="Statistics">
           {total !== 0 ? (
