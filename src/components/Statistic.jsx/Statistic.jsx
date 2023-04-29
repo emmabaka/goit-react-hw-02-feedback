@@ -21,9 +21,9 @@ export default Statistic;
 
 Statistic.propTypes = {
   values: PropTypes.exact({
-    Good: PropTypes.number.isRequired,
-    Neutral: PropTypes.number.isRequired,
-    Bad: PropTypes.number.isRequired,
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
   }).isRequired,
   countTotal: PropTypes.func.isRequired,
   countPositive: PropTypes.func.isRequired,
