@@ -2,15 +2,15 @@ import PropTypes from 'prop-types';
 import css from './Statistic.module.css';
 
 const Statistic = ({
-  values: { Good, Neutral, Bad },
+  values: { good, neutral, bad },
   countTotal,
   countPositive,
 }) => {
   return (
     <ul className={css.list}>
-      <li className={css.item}>Good: {Good}</li>
-      <li className={css.item}>Neutral: {Neutral}</li>
-      <li className={css.item}>Bad: {Bad}</li>
+      <li className={css.item}>Good: {good}</li>
+      <li className={css.item}>Neutral: {neutral}</li>
+      <li className={css.item}>Bad: {bad}</li>
       <li className={css.item}>Total: {countTotal()}</li>
       <li className={css.item}>Positive feedback: {countPositive()}</li>
     </ul>

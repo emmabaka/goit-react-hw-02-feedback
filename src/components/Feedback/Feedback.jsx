@@ -6,9 +6,9 @@ import Notification from 'components/Notification/Notification';
 
 class Feedback extends Component {
   state = {
-    Good: 0,
-    Neutral: 0,
-    Bad: 0,
+    good: 0,
+    neutral: 0,
+    bad: 0,
   };
 
   handleClick = e => {
@@ -24,7 +24,7 @@ class Feedback extends Component {
 
   countPositiveFeedbackPercentage = () => {
     const total = this.countTotalFeedback();
-    const positive = Math.round((this.state.Good * 100) / total);
+    const positive = Math.round((this.state.good * 100) / total);
     if (total === 0) return 0;
     return `${positive}%`;
   };
